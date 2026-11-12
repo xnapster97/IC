@@ -1,0 +1,11 @@
+{
+  "baseCurrency": "EUR",
+  "cash": 10000,
+  "note": "Example portfolio — replace with your own positions on the Portfolio page.",
+  "positions": [
+    { "ticker": "AAPL", "name": "Apple", "shares": 40, "avgCost": 150, "currency": "USD" },
+    { "ticker": "MSFT", "name": "Microsoft", "shares": 20, "avgCost": 310, "currency": "USD" },
+    { "ticker": "ASML.AS", "name": "ASML Holding", "shares": 8, "avgCost": 620, "currency": "EUR" },
+    { "ticker": "IWDA.AS", "name": "iShares Core MSCI World ETF", "shares": 150, "avgCost": 78, "currency": "EUR" }
+  ]
+}

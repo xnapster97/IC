@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investment Committee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">IC</span>
+      <span class="brand-name">Investment Committee</span>
+    </div>
+    <nav class="tabs" id="nav">
+      <button data-view="committee" class="active">Committee</button>
+      <button data-view="ideas">Idea pipeline</button>
+      <button data-view="portfolio">Portfolio</button>
+      <button data-view="members">Members</button>
+    </nav>
+    <span class="mode-pill" id="modePill">…</span>
+  </header>
+
+  <main>
+    <!-- ================= COMMITTEE ================= -->
+    <section class="view" id="view-committee">
+      <div class="session-bar card">
+        <label class="session-select">
+          <span>Session</span>
+          <select id="sessionSelect"></select>
+        </label>
+        <span class="status-pill" id="statusPill"></span>
+        <div class="spacer"></div>
+        <button class="btn primary" id="newSessionBtn">New session</button>
+        <button class="btn ghost" id="pdfBtn">Download PDF</button>
+      </div>
+      <p class="disclaimer">A simulation for the owner's own decision-making. Not investment advice; no orders are placed.</p>
+
+      <div class="empty card" id="emptyState" hidden>
+        <h2>No session yet</h2>
+        <p>Pick an idea from the pipeline or review your portfolio. The committee runs five rounds: facts, blind cards, roast, rebuttal and final vote — then you decide.</p>
+        <button class="btn primary" id="emptyNewBtn">Start the first session</button>
+      </div>
+
+      <div class="committee-grid" id="committeeGrid" hidden>
+        <div class="stage card">
+          <div class="stage-head">
+            <div class="round-tabs" id="roundTabs"></div>
+            <button class="btn small ghost" id="replayBtn">▶ Replay</button>
+          </div>
+          <div class="table-wrap" id="tableWrap">
+            <div class="felt">
+              <div class="felt-inner">
+                <div class="felt-round" id="feltRound"></div>
+                <div class="felt-question" id="feltQuestion"></div>
+                <div class="felt-chips" id="feltChips"></div>
+              </div>
+            </div>
+            <div id="seats"></div>
+          </div>
+          <p class="footnote">The seats are simulations built from public material. Their words are not quotes from the real people.</p>
+        </div>
+
+        <aside class="minutes card">
+          <h3>Minutes</h3>
+          <div class="minutes-list" id="minutesList"></div>
+          <div class="mention-chips" id="mentionChips"></div>
+          <form class="ask-form" id="askForm">
+            <textarea id="askInput" rows="2" placeholder="Ask a question or add a fact. Start with @Name for one seat, @all for everyone."></textarea>
+            <div class="ask-row">
+              <small>Without @, the Secretary answers.</small>
+              <button class="btn primary" type="submit">Send</button>
+            </div>
+          </form>
+        </aside>
+      </div>
+
+      <details class="dossier card" id="dossier" open hidden>
+        <summary>Dossier: facts, votes per round, figures and verdict</summary>
+        <div class="dossier-grid">
+          <div class="dossier-col" id="factsCol"></div>
+          <div class="dossier-col" id="verdictCol"></div>
+          <div class="dossier-col decision" id="decisionCol"></div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= IDEAS ================= -->
+    <section class="view" id="view-ideas" hidden>
+      <div class="card">
+        <h2>Idea pipeline</h2>
+        <p class="muted">Ideas from bank conviction lists, superinvestor 13F filings and your own research. Press <b>Discuss</b> to put one on the table. Entries marked with a source come from press reports — verify before acting.</p>
+        <div id="ideasList"></div>
+      </div>
+      <form class="card form-grid" id="ideaForm">
+        <h3>Add your own idea</h3>
+        <label>Ticker<input name="ticker" placeholder="e.g. NVDA" /></label>
+        <label>Company<input name="name" placeholder="e.g. NVIDIA" required /></label>
+        <label>Proposal
+          <select name="proposedAction"><option>BUY</option><option>SELL</option><option>HOLD</option></select>
+        </label>
+        <label>Source<input name="source" placeholder="Own idea, newsletter, bank list…" value="Own idea" /></label>
+        <label class="wide">Thesis<textarea name="thesis" rows="3" placeholder="Why should the committee look at this?"></textarea></label>
+        <div class="wide"><button class="btn primary" type="submit">Add idea</button></div>
+      </form>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="view" id="view-portfolio" hidden>
+      <div class="card">
+        <div class="row-between">
+          <h2>My portfolio</h2>
+          <button class="btn primary" id="reviewPortfolioBtn">Review in committee</button>
+        </div>
+        <p class="muted">Enter your positions. The committee gives every holding an ADD / HOLD / TRIM / SELL view.</p>
+        <div class="pf-meta">
+          <label>Base currency<input id="pfCurrency" /></label>
+          <label>Cash<input id="pfCash" type="number" step="any" /></label>
+        </div>
+        <div class="table-scroll">
+          <table class="data">
+            <thead><tr><th>Ticker</th><th>Name</th><th>Shares</th><th>Avg. cost</th><th>Currency</th><th></th></tr></thead>
+            <tbody id="pfRows"></tbody>
+          </table>
+        </div>
+        <div class="row-gap">
+          <button class="btn ghost" id="pfAdd">+ Add position</button>
+          <button class="btn primary" id="pfSave">Save</button>
+          <span class="muted" id="pfSaved"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEMBERS ================= -->
+    <section class="view" id="view-members" hidden>
+      <div class="card">
+        <h2>Committee members</h2>
+        <p class="muted">Each seat is a separate AI agent defined by a file in <code>personas/</code>. Edit a file to sharpen a seat, or add a new file to add a seat.</p>
+      </div>
+      <div class="members-grid" id="membersGrid"></div>
+    </section>
+  </main>
+
+  <!-- New session dialog -->
+  <dialog id="newDialog">
+    <form method="dialog" id="newForm">
+      <h2>New committee session</h2>
+      <div class="seg">
+        <label><input type="radio" name="type" value="idea" checked /> Discuss an idea</label>
+        <label><input type="radio" name="type" value="portfolio" /> Review my portfolio</label>
+      </div>
+      <label class="block" id="ideaPick">Idea<select name="ideaId" id="ideaSelect"></select></label>
+      <fieldset>
+        <legend>Seats at the table</legend>
+        <div class="member-checks" id="memberChecks"></div>
+      </fieldset>
+      <p class="muted small" id="costHint"></p>
+      <div class="dialog-actions">
+        <button class="btn ghost" value="cancel">Cancel</button>
+        <button class="btn primary" value="start" id="startBtn">Start session</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Seat detail dialog -->
+  <dialog id="seatDialog">
+    <div id="seatDetail"></div>
+    <form method="dialog" class="dialog-actions"><button class="btn primary">Close</button></form>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
