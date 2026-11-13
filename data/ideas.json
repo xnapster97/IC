@@ -1,13 +1,132 @@
 [
-  { "id": "amzn", "ticker": "AMZN", "name": "Amazon.com", "source": "Goldman Sachs US Conviction List", "sourceDate": "2026-10", "thesis": "Added to Goldman's US conviction ('Director's Cut') list in Oct 2026 per press reports. Also a top Pershing Square holding (Q1 2026 13F).", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "oxy", "ticker": "OXY", "name": "Occidental Petroleum", "source": "Goldman Sachs US Conviction List", "sourceDate": "2026-10", "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports. Long-standing Berkshire Hathaway holding.", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "jci", "ticker": "JCI", "name": "Johnson Controls", "source": "Goldman Sachs US Conviction List", "sourceDate": "2026-10", "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (building technology, data-centre cooling).", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "hii", "ticker": "HII", "name": "Huntington Ingalls Industries", "source": "Goldman Sachs US Conviction List", "sourceDate": "2026-10", "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (naval shipbuilding, defence budgets).", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "burl", "ticker": "BURL", "name": "Burlington Stores", "source": "Goldman Sachs US Conviction List", "sourceDate": "2026-10", "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (off-price retail).", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "halma", "ticker": "HLMA.L", "name": "Halma", "source": "Goldman Sachs Europe Conviction List", "sourceDate": "2026-07", "thesis": "Added to Goldman's European conviction list in Jul 2026 per press reports (safety & health technology compounder).", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "googl", "ticker": "GOOGL", "name": "Alphabet", "source": "Berkshire Hathaway 13F", "sourceDate": "2026-Q2", "thesis": "Berkshire opened a stake in Q3 2025 and enlarged it; among its top holdings by the Q2 2026 13F. Pershing Square reportedly exited in H1 2026 — a split between two seats at our table.", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "aapl", "ticker": "AAPL", "name": "Apple", "source": "Berkshire Hathaway 13F", "sourceDate": "2026-Q2", "thesis": "Berkshire's largest equity holding for years, but trimmed repeatedly in 2024–2025. Is it still a buy, or was the trimming right?", "proposedAction": "HOLD", "addedAt": "2026-11-12" },
-  { "id": "ma", "ticker": "MA", "name": "Mastercard", "source": "Pershing Square (reported)", "sourceDate": "2026-H1", "thesis": "Reported new Pershing Square position in H1 2026, alongside Visa. Toll-road on global payments.", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "uber", "ticker": "UBER", "name": "Uber Technologies", "source": "Pershing Square 13F", "sourceDate": "2026-Q1", "thesis": "Top-3 Pershing Square position (Q1 2026 13F). Debate: network effects vs. robotaxi disruption.", "proposedAction": "BUY", "addedAt": "2026-11-12" },
-  { "id": "own-example", "ticker": "", "name": "Your own idea (example)", "source": "Own idea", "sourceDate": "", "thesis": "Replace this with your own idea: what do you want to buy or sell, and why?", "proposedAction": "BUY", "addedAt": "2026-11-12" }
+  {
+    "id": "nvda",
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "source": "Own idea",
+    "sourceDate": "2026-11",
+    "thesis": "CEO Jensen Huang resigned on 12 Nov 2026; results due 17 Nov. Buy the scare or wait?",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "id": "meta",
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "source": "Own idea",
+    "sourceDate": "2026-11",
+    "thesis": "Ad revenue +26%, but capex exceeds operating cash flow and Meta raised $37.5bn of equity. Temporary trough or late-cycle signal?",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "id": "amzn",
+    "ticker": "AMZN",
+    "name": "Amazon.com",
+    "source": "Goldman Sachs US Conviction List",
+    "sourceDate": "2026-10",
+    "thesis": "Added to Goldman's US conviction ('Director's Cut') list in Oct 2026 per press reports. Also a top Pershing Square holding (Q1 2026 13F).",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "oxy",
+    "ticker": "OXY",
+    "name": "Occidental Petroleum",
+    "source": "Goldman Sachs US Conviction List",
+    "sourceDate": "2026-10",
+    "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports. Long-standing Berkshire Hathaway holding.",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "jci",
+    "ticker": "JCI",
+    "name": "Johnson Controls",
+    "source": "Goldman Sachs US Conviction List",
+    "sourceDate": "2026-10",
+    "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (building technology, data-centre cooling).",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "hii",
+    "ticker": "HII",
+    "name": "Huntington Ingalls Industries",
+    "source": "Goldman Sachs US Conviction List",
+    "sourceDate": "2026-10",
+    "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (naval shipbuilding, defence budgets).",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "burl",
+    "ticker": "BURL",
+    "name": "Burlington Stores",
+    "source": "Goldman Sachs US Conviction List",
+    "sourceDate": "2026-10",
+    "thesis": "Added to Goldman's US conviction list in Oct 2026 per press reports (off-price retail).",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "halma",
+    "ticker": "HLMA.L",
+    "name": "Halma",
+    "source": "Goldman Sachs Europe Conviction List",
+    "sourceDate": "2026-07",
+    "thesis": "Added to Goldman's European conviction list in Jul 2026 per press reports (safety & health technology compounder).",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "googl",
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "source": "Berkshire Hathaway 13F",
+    "sourceDate": "2026-Q2",
+    "thesis": "Berkshire opened a stake in Q3 2025 and enlarged it; among its top holdings by the Q2 2026 13F. Pershing Square reportedly exited in H1 2026 — a split between two seats at our table.",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "aapl",
+    "ticker": "AAPL",
+    "name": "Apple",
+    "source": "Berkshire Hathaway 13F",
+    "sourceDate": "2026-Q2",
+    "thesis": "Berkshire's largest equity holding for years, but trimmed repeatedly in 2024–2025. Is it still a buy, or was the trimming right?",
+    "proposedAction": "HOLD",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "ma",
+    "ticker": "MA",
+    "name": "Mastercard",
+    "source": "Pershing Square (reported)",
+    "sourceDate": "2026-H1",
+    "thesis": "Reported new Pershing Square position in H1 2026, alongside Visa. Toll-road on global payments.",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "uber",
+    "ticker": "UBER",
+    "name": "Uber Technologies",
+    "source": "Pershing Square 13F",
+    "sourceDate": "2026-Q1",
+    "thesis": "Top-3 Pershing Square position (Q1 2026 13F). Debate: network effects vs. robotaxi disruption.",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  },
+  {
+    "id": "own-example",
+    "ticker": "",
+    "name": "Your own idea (example)",
+    "source": "Own idea",
+    "sourceDate": "",
+    "thesis": "Replace this with your own idea: what do you want to buy or sell, and why?",
+    "proposedAction": "BUY",
+    "addedAt": "2026-11-12"
+  }
 ]

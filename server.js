@@ -1,4 +1,5 @@
 // Web server: serves the UI from /public and a small JSON API under /api.
+import fs from "node:fs";
 import express from "express";
 import { loadPersonas } from "./src/personas.js";
 import { ideas, portfolio, sessions } from "./src/store.js";
@@ -85,6 +86,17 @@ app.get("/api/sessions/:id/events", (req, res) => {
 });
 
 app.get("/api/tally", (_req, res) => res.json(tally({})));
+
+// Sessions written outside the server (e.g. imported by Claude Code) are pushed to open browsers.
+const pending = new Map();
+fs.watch("data/sessions", (_evt, file) => {
+  if (!file?.endsWith(".json")) return;
+  clearTimeout(pending.get(file));
+  pending.set(file, setTimeout(() => {
+    const s = sessions.get(file.replace(/\.json$/, ""));
+    if (s) events.emit(s.id, s);
+  }, 200));
+});
 
 const PORT = Number(process.env.PORT || 4730);
 app.listen(PORT, () => {

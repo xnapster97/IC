@@ -20,6 +20,14 @@ A simulated investment committee for your own investment decisions. AI seats mod
    ```
 5. Im Browser öffnen: **http://localhost:4730**
 
+## Free: Claude Code mode (no API key)
+
+Without an API key you can still run real committee sessions: ask Claude Code in the chat, e.g.
+*„Starte eine Komitee-Sitzung zu Nvidia“*. Claude researches the facts, writes every seat's cards, roasts and final votes,
+and imports the session (`node scripts/committee.js import data/claude-code/<file>.json`). It appears in the app like any other session.
+Questions you type in the minutes wait until you tell Claude Code: *„Beantworte die offenen Fragen im Komitee.“*
+Details for Claude are in `CLAUDE.md`.
+
 ## How a session works
 
 | Round | What happens |

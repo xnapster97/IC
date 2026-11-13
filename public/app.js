@@ -40,9 +40,9 @@ async function boot() {
   state.status = status; state.personas = personas;
   state.byId = Object.fromEntries(personas.map((p) => [p.id, p]));
   const pill = $("#modePill");
-  pill.textContent = status.mode === "live" ? `Live · ${status.model}` : "Demo mode · no API key";
+  pill.textContent = status.mode === "live" ? `Live · ${status.model}` : "No API key · demo & Claude Code mode";
   pill.className = `mode-pill ${status.mode}`;
-  pill.title = status.mode === "live" ? "Seats are answered by Claude." : "Add ANTHROPIC_API_KEY to .env and restart for real answers.";
+  pill.title = status.mode === "live" ? "Seats are answered by Claude." : "New sessions from this page use placeholders. Ask Claude Code in the chat for a real session (free with your Claude plan), or add ANTHROPIC_API_KEY to .env.";
 
   $$("#nav button").forEach((b) => b.addEventListener("click", () => showView(b.dataset.view)));
   $("#newSessionBtn").onclick = openNewDialog; $("#emptyNewBtn").onclick = openNewDialog;
@@ -115,6 +115,7 @@ function render() {
   sp.className = `status-pill ${s.status}`;
   sp.textContent = { running: `Running · ${ROUND_TEXT[s.currentRound]?.[0] || ""}`, awaiting_decision: "Awaiting your decision", closed: "Decided", error: "Error" }[s.status] || s.status;
   if (s.mode === "demo") sp.textContent += " · demo";
+  if (s.mode === "claude-code") sp.textContent += " · via Claude Code";
   renderRoundTabs(); renderTable(); renderMinutes(); renderDossier();
 }
 
@@ -263,13 +264,15 @@ function cardBlock(title, c) {
 // ---------- minutes & chat ----------
 function renderMinutes() {
   const s = state.session; const list = $("#minutesList");
-  const atBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 40;
+  const key = `${s.id}:${s.minutes.length}`;
+  const grew = list.dataset.key !== key; // new session or new entries -> jump to the latest entry
+  list.dataset.key = key;
   list.innerHTML = s.minutes.map((m) => {
     const p = state.byId[m.speaker] || { name: m.speaker, initials: "?", color: "#777", kind: "member" };
     const cls = p.kind === "secretary" ? "secretary" : p.kind === "head" ? "head" : "";
     return `<div class="minute ${cls}"><div class="mini-av" style="background:${esc(p.color)}">${esc(p.initials)}</div><div><div class="who">${esc(p.name)}<small>${esc(ROUND_TEXT[m.round]?.[0] || "")}</small></div><div class="what">${esc(m.text)}</div></div></div>`;
   }).join("") + (s.errors?.length ? `<div class="minute"><div></div><div class="what muted">Errors: ${esc(s.errors.join(" | "))}</div></div>` : "");
-  if (atBottom) list.scrollTop = list.scrollHeight;
+  if (grew) { list.scrollTop = list.scrollHeight; requestAnimationFrame(() => (list.scrollTop = list.scrollHeight)); }
   $("#mentionChips").innerHTML = ["all", ...s.members].map((id) => {
     const tag = id === "all" ? "all" : state.byId[id]?.name.split(" ").at(-1);
     return `<button type="button" data-tag="${esc(tag)}">@${esc(tag)}</button>`;

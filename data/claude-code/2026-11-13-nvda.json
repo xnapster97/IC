@@ -1,0 +1,247 @@
+{
+  "id": "2026-11-13-nvda-cc",
+  "date": "2026-11-13T08:00:00.000Z",
+  "idea": {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "source": "Own idea (Head of IC)",
+    "thesis": "Should we buy NVIDIA now — after the CEO's resignation and ahead of the Q3 FY2027 results on 17 Nov 2026?",
+    "proposedAction": "BUY"
+  },
+  "members": ["buffett", "munger", "ackman", "griffin", "lynch", "wood", "burry", "dalio", "marks", "quant"],
+  "facts": {
+    "text": "**Business.** Designs GPUs, networking and software (CUDA) for AI data centres; data centre is now the overwhelming majority of revenue.\n\n**Price.** $166.19 at the close on 12 Nov 2026 (−4.3% on the day). Closed $173.73 on 11 Nov, then fell ~8–9% after hours on reports about the CEO. Trading well below its October high. Market value roughly $3.9tn (estimate: ~23.5bn shares).\n\n**The news (12 Nov 2026).** Jensen Huang resigned as CEO, President and board member, effective immediately, after reports of a relationship with an Nvidia executive and reports that US intelligence agencies linked him to a Chinese business executive suspected of working for China's Ministry of State Security. CFO **Colette Kress is interim CEO**; Harvey Jones becomes the first independent board chair; a search for a permanent CEO has started. Bernstein reportedly halved its price target ($400 → $200).\n\n**Last results (Q2 FY2027).** Data centre revenue $89.0bn, +117% y/y, +18% q/q.\n\n**Guidance (Q3 FY2027).** Revenue $108.0bn ±2%, gross margin 74.0% ±0.5pp, excluding any China data centre compute revenue. **Results due 17 Nov 2026** (date reported by CNBC/Yahoo; some trackers list it as unconfirmed).\n\n**Valuation (Secretary's rough estimate, not reported figures).** Q3 guidance annualised ≈ $430bn revenue. At an assumed ~55% net margin that is ≈ $235bn earnings, ≈ $10 per share → about **16–17× run-rate earnings**. Valid only if the run-rate holds.\n\n**Bull case.** Demand for AI compute (training and now inference) still exceeds supply; CUDA software moat; gross margin ~74%; the business is run by a deep team and the roadmap is set for years.\n\n**Bear case.** Founder-CEO gone overnight with a national-security dimension; customer concentration in a few hyperscalers whose free cash flow is turning negative (e.g. Meta) and who build their own chips; peak-cycle earnings; US–China export risk.\n\n*Uncertain:* exact share count, net margin, earnings date confirmation. Verify before acting.",
+    "facts": {
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "currency": "USD",
+      "price": 166.19,
+      "priceDate": "2026-11-12 close",
+      "keyFacts": [
+        { "label": "Market value (est.)", "value": "≈ $3.9tn" },
+        { "label": "Q3 FY27 revenue guide", "value": "$108bn ±2%" },
+        { "label": "Gross margin guide", "value": "74% ±0.5pp" },
+        { "label": "Q2 data centre revenue", "value": "$89.0bn (+117% y/y)" },
+        { "label": "Run-rate P/E (est.)", "value": "≈ 16–17×" },
+        { "label": "CEO", "value": "Colette Kress (interim)" },
+        { "label": "Next results", "value": "17 Nov 2026" }
+      ]
+    },
+    "sources": [
+      { "title": "CNBC — Nvidia stock closes down over 4% after Jensen Huang announces resignation", "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html" },
+      { "title": "CNBC — Jensen Huang resigns: live updates", "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html" },
+      { "title": "Yahoo Finance — Stock market today, Nov 12", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-12-221840920.html" },
+      { "title": "Forbes — Nvidia shares plunge as board reportedly prepares to oust CEO", "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/nvidia-shares-plunge-as-board-reportedly-prepares-to-oust-ceo-jensen-huang/" },
+      { "title": "StockTitan — Nvidia Q2 FY2027 results", "url": "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-second-quarter-fiscal-98x41cxh35vk.html" },
+      { "title": "Betafinch — Q3 guided to $108bn", "url": "https://betafinch.com/blog/nvidia-fiscal-2027-data-center-guidance" },
+      { "title": "Gotrade — NVDA close Nov 11", "url": "https://www.heygotrade.com/en/us-stock/nvda/" }
+    ]
+  },
+  "blind": {
+    "buffett": {
+      "vote": "HOLD", "conviction": 2,
+      "headline": "Wonderful economics today, but I can't tell you what a chip business earns in ten years — and the man who built it just left.",
+      "thesis": "Seventy-four percent gross margins tell you customers can't do without the product right now. What I can't tell you is whether that's a moat or a boom. Chip leadership has changed hands before, and the biggest customers are designing their own chips — the customer who becomes a competitor is the most dangerous kind. Sixteen times this year's earnings is cheap only if this year is normal, and I don't know that. This one goes in the 'too hard' pile for me. We don't have to swing at every pitch.",
+      "keyRisks": ["Peak-cycle earnings mistaken for normal earnings", "Big customers building their own chips", "Culture after the founder leaves"],
+      "changeMyMind": "Evidence that customers stay locked in through a capex slowdown — margins holding while orders fall.",
+      "fairValue": { "bear": 90, "base": 140, "bull": 210 },
+      "missingFacts": ["Normalised earnings through a full capex cycle", "Customer concentration by name"]
+    },
+    "munger": {
+      "vote": "SELL", "conviction": 3,
+      "headline": "Invert: the founder's gone, the board learned it from newspapers, and the customers are financing themselves with stock. Why rush in?",
+      "thesis": "Invert, always invert. How does an owner lose money here? Earnings at a cyclical peak, a governance shock with a national-security angle, and customers so stretched they sell shares to buy the product. Any one of those I could live with. All three together is a lollapalooza in the wrong direction. A great business is worth waiting for. When in doubt, leave it out — and for anyone holding a large position, trimming is no sin.",
+      "keyRisks": ["Lollapalooza of cyclical, governance and customer risks", "Unknown permanent CEO", "Incentives on the board during the search"],
+      "changeMyMind": "A credible permanent CEO and a full cycle of data showing demand is not just customer capex bunching.",
+      "fairValue": { "bear": 80, "base": 125, "bull": 190 },
+      "missingFacts": ["What the board knew and when"]
+    },
+    "ackman": {
+      "vote": "BUY", "conviction": 4,
+      "headline": "The market is pricing a governance scandal as a business problem — the franchise doesn't run on one man.",
+      "thesis": "Nvidia is the dominant, high-return toll road of AI compute: CUDA software lock-in, 74% gross margins, guidance of $108bn for the quarter. A founder leaving is painful, but the roadmap is set for two years, the interim CEO has run the numbers for a decade, and the board just added an independent chair — governance improves. At roughly 16–17× run-rate earnings this is a high-quality compounder at a value price. Near-term catalyst: the 17 November print. If we like it, own enough for it to matter.",
+      "keyRisks": ["Permanent CEO choice disappoints", "China/security investigation widens", "Hyperscaler capex pause"],
+      "changeMyMind": "Guidance cut or evidence that key engineers are leaving after the CEO change.",
+      "fairValue": { "bear": 140, "base": 230, "bull": 300 },
+      "missingFacts": ["Retention packages for top engineering leaders"]
+    },
+    "griffin": {
+      "vote": "HOLD", "conviction": 3,
+      "headline": "A binary event five days out on top of a leadership shock — let the print and implied vol tell us the size, not the story.",
+      "thesis": "We have two stacked events: the CEO exit and results on 17 November. Implied volatility will be elevated, so we'd be paying up for risk we can wait out. Positioning is crowded in AI semis, and the after-hours move shows how thin the bid is. The right trade is to wait for the print: if the quarter delivers ~$108bn and the Q4 guide holds, start at 1.5% of the portfolio, add on confirmation, with a review trigger at −15%. Hedge the semis factor where possible; keep the Nvidia-specific view.",
+      "keyRisks": ["Gap risk around earnings", "Crowded positioning", "Factor drawdown in AI semis"],
+      "changeMyMind": "Results with a clean beat and raised guide plus a calm reaction in implied volatility.",
+      "fairValue": { "bear": 130, "base": 200, "bull": 260 },
+      "missingFacts": ["Implied move for 17 Nov", "Short interest and options positioning"]
+    },
+    "lynch": {
+      "vote": "BUY", "conviction": 4,
+      "headline": "A fast grower doubling revenue at a stalwart's price — that's the kind of PEG you rarely see.",
+      "thesis": "Two-minute story: everybody building AI needs these chips, revenue in the data centre more than doubled in a year, and the stock now trades at about 16 times run-rate earnings. Even if growth halves, the PEG is well under one. A CEO leaving makes headlines, but the products, the customers and the order book didn't change on Wednesday. I'd buy some, not the farm — and I'd watch the inventory line and the guidance like a hawk.",
+      "keyRisks": ["It's a cyclical disguised as a fast grower", "Inventory build at customers", "Margins compress as rivals catch up"],
+      "changeMyMind": "Inventories rising faster than sales, or a guide that shows sequential decline.",
+      "fairValue": { "bear": 120, "base": 220, "bull": 300 },
+      "missingFacts": ["Inventory and receivables trend"]
+    },
+    "wood": {
+      "vote": "BUY", "conviction": 5,
+      "headline": "Leadership changes; Wright's law doesn't. Inference demand is just beginning — this is a gift for five-year investors.",
+      "thesis": "AI compute costs are collapsing with every doubling of cumulative production, and lower cost per token is exploding the addressable market from training into inference, agents and robotics. Nvidia sits at the convergence of AI and robotics platforms with full-stack software. A management shock creates the volatility long-term investors should use. Our five-year model points to multi-trillion revenue opportunities for accelerated compute; at roughly 16× run-rate earnings the market is discounting a cycle, not a platform.",
+      "keyRisks": ["Custom chips at hyperscalers", "Export controls", "Execution under interim leadership"],
+      "changeMyMind": "Evidence that cost per unit of compute stops falling or that custom chips take majority share of inference.",
+      "fairValue": { "bear": 150, "base": 260, "bull": 400 },
+      "missingFacts": ["Inference share of data centre revenue"]
+    },
+    "burry": {
+      "vote": "SELL", "conviction": 4,
+      "headline": "Peak capex, circular financing and a key-man exit with a counter-intelligence file. I've seen this movie.",
+      "thesis": "Look at who pays. Meta's capex exceeded operating cash flow last quarter and it sold $37.5bn of stock — with Nvidia reportedly investing in that offering. Vendor money flowing back into customer equity is not demand, it's financing. Hyperscalers depreciate servers over five to six years while product cycles are annual; that flatters their earnings and their budgets. Now the founder exits under a security probe. 'Cheap on run-rate' is what peak earnings always look like.",
+      "keyRisks": ["My timing could be early — it often is", "AI demand proves durable", "Short squeezes"],
+      "changeMyMind": "Customers funding capex from free cash flow rather than equity and debt for several quarters.",
+      "fairValue": { "bear": 70, "base": 110, "bull": 170 },
+      "missingFacts": ["Size of vendor financing and strategic investments", "Customer useful-life assumptions"]
+    },
+    "dalio": {
+      "vote": "HOLD", "conviction": 2,
+      "headline": "The way I see it, this is now a geopolitical asset, and the portfolio already owns the AI factor several times over.",
+      "thesis": "Nvidia does best in a regime of strong growth, abundant capital and stable US–China relations. The last of those just became personal to the company's leadership. Export policy, security reviews and supply in Taiwan are now first-order risks. At the portfolio level the Head of IC already holds Apple, Microsoft, ASML and a world index heavy in US mega-cap tech — adding Nvidia concentrates the same bet rather than adding a new return stream.",
+      "keyRisks": ["US–China escalation", "Portfolio concentration in one factor", "Tightening capital conditions"],
+      "changeMyMind": "A portfolio that is diversified across regimes first, so this is a sized satellite.",
+      "fairValue": { "bear": 110, "base": 160, "bull": 220 },
+      "missingFacts": ["Portfolio's current AI/semis exposure in %"]
+    },
+    "marks": {
+      "vote": "HOLD", "conviction": 3,
+      "headline": "Everyone knows the growth. The question is what's priced — and 16× peak isn't 16× normal.",
+      "thesis": "First-level thinking says: great company, low multiple, buy the scare. Second-level thinking asks what the consensus misses. The multiple looks low because earnings are at a level nobody has seen through a full cycle. The pendulum swung from euphoria in October to fear this week; it isn't yet at despair. We can't predict the print, but we can prepare: decide in advance the price at which the risk/reward becomes compelling.",
+      "keyRisks": ["Earnings normalise sharply", "Sentiment swings further to fear", "Cycle turn in AI capex"],
+      "changeMyMind": "A price that discounts a meaningful earnings decline — around $120.",
+      "fairValue": { "bear": 100, "base": 170, "bull": 240 },
+      "missingFacts": ["Earnings sensitivity to a 30% capex cut"]
+    },
+    "quant": {
+      "vote": "HOLD", "conviction": 3,
+      "headline": "Momentum negative, revisions strongly positive, valuation moderate: composite neutral; event risk dominates.",
+      "thesis": "Factor read: 12–1 month momentum weakened (well below October high, sharp drop this week); earnings revisions remain strongly positive given the $108bn guide; value score neutral-to-attractive on forward estimates; quality high (gross margin ~74%). Base rates after abrupt CEO departures show elevated volatility over the following 3 months with mixed direction. Composite: neutral. Systematic rule: no new position into a scheduled binary event; re-score after 17 Nov.",
+      "keyRisks": ["Momentum crash continues", "Revisions turn", "Volatility regime shift"],
+      "changeMyMind": "Momentum stabilising and positive revisions after the print.",
+      "fairValue": { "bear": null, "base": null, "bull": null },
+      "missingFacts": ["Consensus EPS revisions last 30 days", "Implied volatility"]
+    }
+  },
+  "roast": {
+    "buffett": { "target": "wood", "critique": "Cathie, 'buy the weakness' isn't a valuation. Tell me the gross margin in 2031 and who'll be selling the chips at that margin — then we can talk." },
+    "munger": { "target": "ackman", "critique": "Bill, 'the franchise doesn't run on one man' is what every board says the day the founder leaves. Culture walks out the door slowly, then all at once. And this board found out from the newspapers." },
+    "ackman": { "target": "burry", "critique": "Michael, a few billion into Meta's offering against a $430bn revenue run-rate is a footnote, not a fraud. The customers are the most creditworthy companies on earth." },
+    "griffin": { "target": "lynch", "critique": "Peter, a PEG on peak-cycle earnings is meaningless. Semiconductor earnings have halved in downturns. Size the drawdown, not the PEG." },
+    "lynch": { "target": "munger", "critique": "Charlie, 'too hard' is fine for you. But a company doubling revenue at 16 times earnings — sometimes the obvious is just obvious." },
+    "wood": { "target": "burry", "critique": "Michael, the peak-cycle framing ignores inference. Every token served needs compute, and as the cost per token collapses, usage explodes. That's not 2000 fibre." },
+    "burry": { "target": "wood", "critique": "Cathie, fibre demand was real in 2000 too. Your end-customers have negative free cash flow and are selling stock to pay the vendor. Conviction 5 is a feeling, not a margin of safety." },
+    "dalio": { "target": "ackman", "critique": "Bill, you treat a national-security exposure as a governance blip. If US–China tension has entered the C-suite, export and supply risk rise for years — that's a regime question, not a quarter." },
+    "marks": { "target": "lynch", "critique": "Peter, the growth is known to everyone. Sixteen times a run-rate at the top of a capex cycle is not sixteen times normalised earnings. What does the price assume?" },
+    "quant": { "target": "wood", "critique": "Maximum conviction into negative momentum and a leadership shock: historically, sizing up into that setup has had poor risk-adjusted outcomes." }
+  },
+  "final": {
+    "buffett": {
+      "rebuttal": "Nobody attacked me, which usually means I said something boring. Boring is fine. I'll stay in the 'too hard' pile.",
+      "vote": "HOLD", "conviction": 2,
+      "headline": "Still too hard for me; a wonderful business today, an unknowable one in ten years.",
+      "thesis": "The debate made the cycle question sharper, not easier. I'd rather own a business whose earnings I can roughly see in 2035.",
+      "keyRisks": ["Peak-cycle earnings", "Customers becoming competitors"],
+      "changeMyMind": "A full cycle of evidence.",
+      "fairValue": { "bear": 90, "base": 140, "bull": 210 }
+    },
+    "munger": {
+      "rebuttal": "Peter says the obvious is obvious. When the obvious is also what everyone owns, it's usually already in the price. I have nothing to add.",
+      "vote": "SELL", "conviction": 3,
+      "headline": "Nothing I heard changes the inversion: too many ways to lose, no need to play.",
+      "thesis": "Wait for a permanent CEO and a cycle. Great businesses get cheaper more often than people think.",
+      "keyRisks": ["Governance", "Cycle", "Customer financing"],
+      "changeMyMind": "A credible permanent CEO and evidence across a slowdown.",
+      "fairValue": { "bear": 80, "base": 125, "bull": 190 }
+    },
+    "ackman": {
+      "rebuttal": "Charlie is right that culture risk is real and slow-moving — I concede that and lower my conviction. But the board adding an independent chair is a governance improvement, and the product roadmap is locked for two years. I'd buy, in tranches, around the print.",
+      "vote": "BUY", "conviction": 3,
+      "headline": "Still a buy: a dominant franchise at a value price — but in tranches, given the culture risk Charlie raised.",
+      "thesis": "Start a position after 17 Nov, add as the CEO search clarifies. The franchise's economics justify a meaningful size over time.",
+      "keyRisks": ["CEO search", "Engineer retention", "Capex pause"],
+      "changeMyMind": "Guidance cut or senior engineering departures.",
+      "fairValue": { "bear": 140, "base": 230, "bull": 300 }
+    },
+    "griffin": {
+      "rebuttal": "Nobody attacked my card. My view is reinforced by the debate: the disagreement is about the cycle, which the print on 17 Nov will partly answer.",
+      "vote": "HOLD", "conviction": 3,
+      "headline": "Wait five days. After the print: 1.5% starter if guidance holds, review trigger at −15%.",
+      "thesis": "Don't pay elevated implied volatility for an outcome we can observe next week. Pre-commit the rules now so emotion doesn't decide.",
+      "keyRisks": ["Gap risk", "Crowding"],
+      "changeMyMind": "A clean beat-and-raise with calm options pricing.",
+      "fairValue": { "bear": 130, "base": 200, "bull": 260 }
+    },
+    "lynch": {
+      "rebuttal": "Ken and Howard got me: I'll reclassify it from 'fast grower' to 'cyclical fast grower'. Cyclicals you buy when the P/E is high and the news is bad — the news is bad now, but the P/E is low. So: smaller position, eyes on inventories.",
+      "vote": "BUY", "conviction": 3,
+      "headline": "Still a buy, but as a cyclical fast grower: smaller size, watch inventories and the guide.",
+      "thesis": "The story is intact; the category changed, so the sizing changes. A small starter position, added only if the next two quarters confirm.",
+      "keyRisks": ["Cycle turn", "Inventory build"],
+      "changeMyMind": "Inventories rising faster than sales.",
+      "fairValue": { "bear": 120, "base": 220, "bull": 300 }
+    },
+    "wood": {
+      "rebuttal": "Michael and the Quant are right that conviction should be sized to the setup. I lower conviction one notch for execution risk under interim leadership. The five-year opportunity hasn't changed.",
+      "vote": "BUY", "conviction": 4,
+      "headline": "Still a buy: the platform is intact; I'd accumulate through the volatility rather than wait for clarity.",
+      "thesis": "Clarity is expensive. Long-term investors are paid for owning innovation through uncertainty.",
+      "keyRisks": ["Custom chips", "Export controls", "Interim leadership"],
+      "changeMyMind": "Cost per unit of compute stops falling.",
+      "fairValue": { "bear": 150, "base": 260, "bull": 400 }
+    },
+    "burry": {
+      "rebuttal": "Bill calls it a footnote. Footnotes are where the problems live. Cathie says inference — fine, then show me customers paying for it out of free cash flow. Unchanged.",
+      "vote": "SELL", "conviction": 4,
+      "headline": "Unchanged: peak earnings, customer financing and a key-man shock. No margin of safety.",
+      "thesis": "Owners should use strength to trim. New buyers should wait for the cycle to show its hand.",
+      "keyRisks": ["Being early"],
+      "changeMyMind": "Customers funding capex from free cash flow for several quarters.",
+      "fairValue": { "bear": 70, "base": 110, "bull": 170 }
+    },
+    "dalio": {
+      "rebuttal": "Nobody attacked my card. I'd only add: whatever the committee decides, size it as part of the whole portfolio's AI exposure, not as a stand-alone bet.",
+      "vote": "HOLD", "conviction": 2,
+      "headline": "Hold off; if the Head of IC buys, cap total AI/semis exposure first.",
+      "thesis": "Diversification across regimes matters more than this one decision.",
+      "keyRisks": ["Geopolitics", "Concentration"],
+      "changeMyMind": "A diversified portfolio where this is a small satellite.",
+      "fairValue": { "bear": 110, "base": 160, "bull": 220 }
+    },
+    "marks": {
+      "rebuttal": "Nobody attacked me. Peter's reclassification is the most useful thing said today — it moves the conversation from 'how good' to 'what's priced'.",
+      "vote": "HOLD", "conviction": 3,
+      "headline": "Hold; set a price in advance — around $120 the odds become compelling.",
+      "thesis": "Prepare rather than predict. A limit price and patience beat a decision made in the week of a scandal.",
+      "keyRisks": ["Earnings normalisation"],
+      "changeMyMind": "Price near $120 or evidence of durable earnings.",
+      "fairValue": { "bear": 100, "base": 170, "bull": 240 }
+    },
+    "quant": {
+      "rebuttal": "Nobody attacked my card. Re-score after 17 Nov per rules.",
+      "vote": "HOLD", "conviction": 3,
+      "headline": "Composite neutral; no new position into a scheduled binary event.",
+      "thesis": "Rules: wait for the event, then re-score momentum and revisions.",
+      "keyRisks": ["Momentum crash"],
+      "changeMyMind": "Momentum stabilising after the print.",
+      "fairValue": { "bear": null, "base": null, "bull": null }
+    }
+  },
+  "verdict": {
+    "recommendation": "HOLD",
+    "consensus": "Majority HOLD (3 BUY – 5 HOLD – 2 SELL), unchanged after the debate",
+    "summary": "Nobody disputes the quality of the franchise; the committee disagrees on whether ~16× run-rate earnings is cheap or peak-cycle. The three buyers all lowered conviction or sizing during the debate. The strongest unanswered point is Burry's: key customers are funding their purchases with equity and debt rather than free cash flow. The practical consensus is to wait for the 17 Nov results and the CEO search, then decide with pre-set rules.",
+    "agreements": ["The franchise and margins are exceptional today", "Nobody should buy a full position before 17 Nov", "Any position must be sized against the portfolio's existing AI/tech exposure (AAPL, MSFT, ASML, MSCI World)"],
+    "disagreements": ["Peak-cycle vs. platform: is 16× run-rate cheap?", "How much the founder's exit damages culture and execution", "Whether customer financing is a red flag or a footnote"],
+    "keyRisks": ["Earnings gap on 17 Nov", "CEO search and talent retention", "US–China security and export risk", "Hyperscaler capex slowdown"],
+    "openQuestions": ["Does Q3 meet ~$108bn and does the Q4 guide hold?", "Who becomes permanent CEO, and when?", "How much of revenue depends on customers with negative free cash flow?"],
+    "positionSizing": "No position before 17 Nov. If guidance holds: starter 1–1.5% of the portfolio, add in tranches; review trigger −15%; Marks' limit price ~$120 for a larger position.",
+    "herdAlarm": false
+  }
+}

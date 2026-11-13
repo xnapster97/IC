@@ -1,0 +1,879 @@
+{
+  "id": "2026-11-13-meta-cc",
+  "title": "BUY META — Meta Platforms",
+  "type": "idea",
+  "idea": {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "source": "Own idea (Head of IC)",
+    "thesis": "Should we buy Meta now — after strong Q3 growth, record AI capex, negative free cash flow and the largest equity raise in its history?",
+    "proposedAction": "BUY"
+  },
+  "members": [
+    "buffett",
+    "munger",
+    "ackman",
+    "griffin",
+    "lynch",
+    "wood",
+    "burry",
+    "dalio",
+    "marks",
+    "quant"
+  ],
+  "mode": "claude-code",
+  "status": "awaiting_decision",
+  "currentRound": "final",
+  "createdAt": "2026-11-13T08:30:00.000Z",
+  "rounds": {
+    "facts": {
+      "text": "**Business.** Facebook, Instagram, WhatsApp, Messenger and Threads; nearly all revenue is advertising. Large AI and data-centre build-out; Reality Labs (glasses, VR).\n\n**Price.** ≈ $624–629 (11–12 Nov 2026). 52-week range $520–780; trading ~20% below the high. Forward P/E ≈ 19× (one data provider). Average analyst target ≈ $850 (61 analysts, 'Strong Buy') — sell-side targets are usually optimistic.\n\n**Q3 2026 (reported 21 Oct).** Revenue ≈ $64.6bn, **+26% y/y**. A **$9.9bn legal charge** cut operating margin to ~20%; GAAP EPS $3.83, $7.40 excluding the charge (company figure). **Q4 revenue guide $73–76bn.**\n\n**Capex and cash flow.** 2026 capex guidance $135–145bn. Q3 capex incl. finance-lease principal ≈ $34.9bn vs. operating cash flow ≈ $32.8bn → **free cash flow ≈ −$2.1bn**.\n\n**Equity raise (Oct 2026).** $25bn of Class A stock via forward sale at **$625/share** plus $12.5bn **6.5% mandatory convertible preferred** = **$37.5bn priced**. A further **up to $60bn** at-the-market programme in new **non-voting Class C** shares is planned for early 2027. Chipmakers (reportedly incl. Nvidia, several $bn) indicated interest in the offering.\n\n**Context.** Pershing Square held Meta (~11% of its Q1 2026 13F). Reports that the US midterm results raise political questions about data-centre expansion.\n\n**Bull case.** The best ad machine in the world is accelerating thanks to AI; ~19× forward earnings for 26% growth.\n\n**Bear case.** Capex has outrun cash flow, dilution is starting, depreciation will rise for years, and control stays with one shareholder while outside capital is raised through non-voting shares.\n\n*Uncertain:* exact close, adjusted EPS, total size of the raise (sources say $37.5bn priced, up to $97.5bn incl. planned ATM). Verify before acting.",
+      "facts": {
+        "company": "Meta Platforms, Inc.",
+        "ticker": "META",
+        "currency": "USD",
+        "price": 624,
+        "priceDate": "≈ 12 Nov 2026",
+        "keyFacts": [
+          {
+            "label": "Forward P/E",
+            "value": "≈ 19×"
+          },
+          {
+            "label": "Q3 revenue",
+            "value": "$64.6bn (+26% y/y)"
+          },
+          {
+            "label": "Q4 revenue guide",
+            "value": "$73–76bn"
+          },
+          {
+            "label": "2026 capex guide",
+            "value": "$135–145bn"
+          },
+          {
+            "label": "Q3 free cash flow",
+            "value": "≈ −$2.1bn"
+          },
+          {
+            "label": "Equity raised (Oct)",
+            "value": "$37.5bn @ $625 + 6.5% pref."
+          },
+          {
+            "label": "Planned Class C ATM",
+            "value": "up to $60bn (2027)"
+          },
+          {
+            "label": "52-week range",
+            "value": "$520 – $780"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "CNBC — Meta Q3 2026 earnings live updates",
+          "url": "https://www.cnbc.com/2026/10/21/meta-earnings-q3-2026-live-updates.html"
+        },
+        {
+          "title": "Global Data Center Hub — Capex outran cash, $37.5bn stock sale",
+          "url": "https://www.globaldatacenterhub.com/p/meta-q3-2026-earnings-capex-cash-equity-raise"
+        },
+        {
+          "title": "Motley Fool — Meta raises largest-ever equity offering",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/10/27/stock-market-today-oct-27-meta-raises-largest-ever-equity-offering-to-nearly-usd98-billion-to-fund-ai-infrastructure-bet/"
+        },
+        {
+          "title": "CNBC — Meta launches plan for $95bn stock offering",
+          "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+        },
+        {
+          "title": "Vizaca — Meta Q3: $64.6bn revenue, legal charge",
+          "url": "https://www.vizaca.com/business/meta-q3-2026-earnings/"
+        },
+        {
+          "title": "StockAnalysis — META quote and statistics",
+          "url": "https://stockanalysis.com/stocks/meta/"
+        },
+        {
+          "title": "Yahoo Finance — Midterm results and AI data-centre expansion",
+          "url": "https://finance.yahoo.com/technology/ai/articles/meta-stock-midterm-election-results-132950667.html"
+        }
+      ]
+    },
+    "blind": {
+      "buffett": {
+        "keyRisks": [
+          "AI capex never earns its cost of capital",
+          "Dilution from the planned $60bn programme",
+          "Regulation and litigation (the $9.9bn charge)"
+        ],
+        "missingFacts": [
+          "Maintenance vs. growth capex split",
+          "Depreciation guidance for 2027"
+        ],
+        "positions": [],
+        "changeMyMind": "Two or three quarters of capex flattening while ad growth stays above 15%.",
+        "fairValue": {
+          "bear": 480,
+          "base": 620,
+          "bull": 760
+        },
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "A wonderful toll bridge on human attention — but when a business sells stock to pay for its capex, owner earnings are lower than reported earnings.",
+        "thesis": "Three-plus billion people use these apps every day, and advertisers have to be there. That's a real moat. But owner earnings are what's left after the capex needed to stay competitive, and right now that's below zero. Reported earnings of nineteen times look cheap; owner earnings say otherwise until the spending pays off. I'd also note the company is issuing shares at about today's price — management is telling you what it thinks the stock is worth as a currency."
+      },
+      "munger": {
+        "keyRisks": [
+          "Capital allocation without a check",
+          "Non-voting share dilution",
+          "History of expensive bets"
+        ],
+        "missingFacts": [
+          "Return on invested capital targets for AI capex"
+        ],
+        "positions": [],
+        "changeMyMind": "Capex discipline that the CEO commits to publicly, with return targets.",
+        "fairValue": {
+          "bear": 400,
+          "base": 550,
+          "bull": 700
+        },
+        "vote": "SELL",
+        "conviction": 3,
+        "headline": "One man controls the votes and now raises sixty billion through shares that carry none. Show me the incentive.",
+        "thesis": "The franchise is superb. The capital allocation is a one-man show with no check. The same management spent tens of billions on the metaverse before; now it is spending more than its cash flow and creating a non-voting share class to fund it. Outside owners provide the money and get no say. That's the incentive structure I'd invert first. I'd rather wait for the bill to arrive in the depreciation line."
+      },
+      "ackman": {
+        "keyRisks": [
+          "Capex keeps rising in 2027",
+          "Regulatory fines",
+          "Ad cycle slowdown"
+        ],
+        "missingFacts": [
+          "2027 capex guidance",
+          "AI-driven ad pricing data"
+        ],
+        "positions": [],
+        "changeMyMind": "2027 capex guided materially higher without matching revenue acceleration.",
+        "fairValue": {
+          "bear": 600,
+          "base": 850,
+          "bull": 1000
+        },
+        "vote": "BUY",
+        "conviction": 4,
+        "headline": "Ad revenue +26% at ~19× forward earnings — the market is confusing a temporary free-cash-flow trough with a broken business.",
+        "thesis": "Meta is a simple, dominant, high-return advertising franchise whose growth is re-accelerating because AI makes its ads work better. The capex is front-loaded; raising equity at $625 instead of borrowing is a prudent bridge, not distress. The Q4 guide of $73–76bn shows the engine is running. Pershing Square held Meta per its Q1 2026 13F. Catalysts: 2027 capex guide and evidence of AI monetisation. Owning a great business at a fair price in a moment of doubt is how we make money."
+      },
+      "griffin": {
+        "keyRisks": [
+          "Share supply from the ATM",
+          "Capex surprise",
+          "Factor drawdown in mega-cap tech"
+        ],
+        "missingFacts": [
+          "ATM timing",
+          "Options-implied volatility"
+        ],
+        "positions": [],
+        "changeMyMind": "Negative revisions or the ATM starting earlier/larger.",
+        "fairValue": {
+          "bear": 560,
+          "base": 720,
+          "bull": 820
+        },
+        "vote": "BUY",
+        "conviction": 3,
+        "headline": "Revisions point up after the Q4 guide; supply overhang caps upside — buy small, hedge the factor.",
+        "thesis": "Earnings revisions are positive after the $73–76bn Q4 guide. Against that: a $25bn forward sale and up to $60bn of Class C supply next year is a known overhang that caps rallies. Positioning is lighter than in the summer after the drop from $780. Risk/reward is modestly positive. Size 2% of the portfolio, hedge broad tech exposure, review trigger at −12% or when the ATM programme starts."
+      },
+      "lynch": {
+        "keyRisks": [
+          "Growth slows to the teens",
+          "Capex never pays back",
+          "Regulation"
+        ],
+        "missingFacts": [
+          "User and engagement trends"
+        ],
+        "positions": [],
+        "changeMyMind": "Revenue growth falling below 15% while capex keeps rising.",
+        "fairValue": {
+          "bear": 550,
+          "base": 800,
+          "bull": 950
+        },
+        "vote": "BUY",
+        "conviction": 4,
+        "headline": "Everyone you know uses Instagram or WhatsApp — and you can buy 26% growth at 19 times earnings.",
+        "thesis": "Two-minute story: the world's biggest social apps, ads getting better with AI, revenue up 26%. That's a stalwart growing like a fast grower, and the PEG is under one. The capex scare and the share sale give us a price below last year's high. I'd buy a sensible position and keep an eye on whether revenue growth stays above 15%."
+      },
+      "wood": {
+        "keyRisks": [
+          "Wearables adoption slower than expected",
+          "AI model competition",
+          "Regulation"
+        ],
+        "missingFacts": [
+          "Reality Labs losses for 2026",
+          "Glasses unit sales"
+        ],
+        "positions": [],
+        "changeMyMind": "AI-driven ad improvements stalling or glasses adoption flat.",
+        "fairValue": {
+          "bear": 580,
+          "base": 850,
+          "bull": 1100
+        },
+        "vote": "BUY",
+        "conviction": 4,
+        "headline": "AI agents, open models and smart glasses — Meta is building a platform, and the capex is the price of admission.",
+        "thesis": "AI is collapsing the cost of creating and targeting content, which compounds Meta's advantage in a three-billion-user network. Smart glasses could be the next computing platform, and Meta is ahead. Investors anchored on free cash flow are pricing a cost centre; we see an innovation platform at ~19× earnings. Equity funding at $625 strengthens the balance sheet for the build-out."
+      },
+      "burry": {
+        "keyRisks": [
+          "AI monetisation surprises upward",
+          "Timing",
+          "Strong ad cycle masks the problem"
+        ],
+        "missingFacts": [
+          "Server useful-life assumptions",
+          "Full terms of the preferred and forward sale"
+        ],
+        "positions": [],
+        "changeMyMind": "Free cash flow back above $40bn annualised without new equity.",
+        "fairValue": {
+          "bear": 380,
+          "base": 480,
+          "bull": 620
+        },
+        "vote": "SELL",
+        "conviction": 5,
+        "headline": "Negative free cash flow, a 6.5% preferred and $60bn of non-voting stock to come. Read the prospectus, not the press release.",
+        "thesis": "A company that generated vast free cash flow a few years ago now issues a mandatory convertible at 6.5% and plans up to $60bn more in non-voting shares. Capex exceeded operating cash flow last quarter. Depreciation on $135–145bn a year will hit margins for years, while servers are depreciated over a life longer than their product cycle. A $9.9bn legal charge rounds it off. EPS is the story; cash is the truth."
+      },
+      "dalio": {
+        "keyRisks": [
+          "Cost of capital",
+          "Political risk to data-centre build-out",
+          "Correlation with existing holdings"
+        ],
+        "missingFacts": [
+          "Portfolio's total tech/AI weight"
+        ],
+        "positions": [],
+        "changeMyMind": "Portfolio diversified so that Meta is a small, deliberate satellite.",
+        "fairValue": {
+          "bear": 500,
+          "base": 630,
+          "bull": 750
+        },
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "It's the same AI-capex bet the portfolio already owns, now exposed to a political regime shift on data centres.",
+        "thesis": "Meta does well in strong growth with cheap capital. Capital is no longer cheap — it is paying 6.5% on preferred stock — and politics around data-centre power use is shifting after the midterms. At the portfolio level, this adds the same mega-cap-tech factor as Microsoft, Apple and the world index. Diversify across regimes before adding another correlated position."
+      },
+      "marks": {
+        "keyRisks": [
+          "Depreciation wave",
+          "Cycle turn in AI capex",
+          "Sentiment shift"
+        ],
+        "missingFacts": [
+          "Depreciation path 2027–2029"
+        ],
+        "positions": [],
+        "changeMyMind": "A price around $520 (52-week low) or proof of returns on capex.",
+        "fairValue": {
+          "bear": 500,
+          "base": 650,
+          "bull": 800
+        },
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "When the best business in its industry needs outside capital to fund its build-out, we are late in the capex cycle.",
+        "thesis": "Second-level question: 19× looks reasonable, but what earnings will be left after depreciation catches up with $140bn a year? The pendulum on AI capex is still closer to optimism than fear — the company could raise $37.5bn in days. Risk is highest when financing is easy. I'd wait for either a lower price or evidence that the spending earns a return."
+      },
+      "quant": {
+        "keyRisks": [
+          "Issuance effect",
+          "Momentum continuation"
+        ],
+        "missingFacts": [
+          "30-day EPS revisions",
+          "Net share issuance forecast"
+        ],
+        "positions": [],
+        "changeMyMind": "Momentum turning positive with revisions still rising.",
+        "fairValue": {
+          "bear": null,
+          "base": null,
+          "bull": null
+        },
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "Value improving, momentum negative, quality falling, revisions positive: composite neutral.",
+        "thesis": "Factor read: momentum negative (≈20% below 52-week high, technical 'death cross' reported); value improved (forward P/E ≈ 19); quality deteriorating (free cash flow negative, rising accruals from capex); revisions positive after the Q4 guide. Equity issuance is historically a negative signal for subsequent 12-month returns. Composite neutral; no position until momentum turns."
+      }
+    },
+    "roast": {
+      "buffett": {
+        "target": "lynch",
+        "critique": "Peter, that nineteen times is calculated on earnings before the bill for $140bn a year of data centres shows up as depreciation. The PEG flatters what the owner actually gets."
+      },
+      "munger": {
+        "target": "wood",
+        "critique": "Cathie, the last time this company bet the house on the next platform it was called the metaverse and it burned tens of billions. Glasses are the sequel."
+      },
+      "ackman": {
+        "target": "burry",
+        "critique": "Michael, funding a capex peak with equity at $625 is prudence, not distress. A company growing ad revenue 26% is not a company in trouble."
+      },
+      "griffin": {
+        "target": "munger",
+        "critique": "Charlie, the governance structure has been the same for a decade and is priced in. Your objection has no catalyst; revisions and supply do."
+      },
+      "lynch": {
+        "target": "burry",
+        "critique": "Michael, you've counted the cost of every data centre but not one dollar of the revenue it produces. Ads are working better — that's why revenue is up 26%."
+      },
+      "wood": {
+        "target": "marks",
+        "critique": "Howard, 'late-cycle' assumes AI spending is cyclical. It's a platform shift like electrification; the early spend always looks excessive."
+      },
+      "burry": {
+        "target": "ackman",
+        "critique": "Bill, a company that used to throw off enormous free cash flow is now paying 6.5% on preferred stock. That's not a bridge, that's a toll. Read the terms."
+      },
+      "dalio": {
+        "target": "griffin",
+        "critique": "Ken, your 'hedge broad tech' is long and short the same factor: AI capex. If the regime turns, the hedge won't protect you where it matters."
+      },
+      "marks": {
+        "target": "wood",
+        "critique": "Cathie, platform shift or not, there's no asset so good it can't be a bad buy at the wrong price — and nobody knows yet what this capex will earn."
+      },
+      "quant": {
+        "target": "lynch",
+        "critique": "Peter, the PEG uses one year of growth. The base rate of 26% growth persisting for five years at this revenue scale is low."
+      }
+    },
+    "final": {
+      "buffett": {
+        "keyRisks": [
+          "Capex returns",
+          "Dilution"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Capex flattening with ad growth intact.",
+        "fairValue": {
+          "bear": 480,
+          "base": 620,
+          "bull": 760
+        },
+        "rebuttal": "Nobody came after me. I'll just repeat: what matters is what's left for the owner after the spending, and we'll know that in a couple of years, not this week.",
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "A wonderful franchise; I'd wait to see owner earnings after the build-out.",
+        "thesis": "No hurry. If the spending pays off, the business will still be wonderful at a higher price; if it doesn't, we'll be glad we waited.",
+        "changedMind": false
+      },
+      "munger": {
+        "keyRisks": [
+          "Capital allocation"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Public return targets for the capex.",
+        "fairValue": {
+          "bear": 400,
+          "base": 550,
+          "bull": 700
+        },
+        "rebuttal": "Ken says governance is priced in. Governance is always priced in — until it isn't. I have nothing to add.",
+        "vote": "SELL",
+        "conviction": 3,
+        "headline": "Unchanged: superb franchise, unchecked capital allocation, owners asked to pay without a vote.",
+        "thesis": "For a holder, trimming is reasonable. For a buyer, there are simpler places to put money.",
+        "changedMind": false
+      },
+      "ackman": {
+        "keyRisks": [
+          "2027 capex",
+          "Regulation"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "2027 capex up sharply without revenue acceleration.",
+        "fairValue": {
+          "bear": 600,
+          "base": 850,
+          "bull": 1000
+        },
+        "rebuttal": "Michael has a point on the cost of the preferred — 6.5% is not cheap money and I concede it. But it is a small part of the capital stack against an advertising engine of this size. Thesis intact.",
+        "vote": "BUY",
+        "conviction": 4,
+        "headline": "Still a buy: a dominant franchise in a temporary cash-flow trough at a fair price.",
+        "thesis": "Buy in two tranches; the second after the 2027 capex guide. Watch the ATM terms.",
+        "changedMind": false
+      },
+      "griffin": {
+        "keyRisks": [
+          "Share supply",
+          "Capex surprise"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Negative revisions.",
+        "fairValue": {
+          "bear": 560,
+          "base": 720,
+          "bull": 820
+        },
+        "rebuttal": "Ray is right: hedging with broad tech leaves the AI-capex factor in both legs. I switch to an equal-weight index hedge and cut size to 1.5%. The view on revisions stands.",
+        "vote": "BUY",
+        "conviction": 3,
+        "headline": "Buy small (1.5%), equal-weight hedge, review at −12% or when the ATM starts.",
+        "thesis": "Positive revisions, known overhang. Sized so the overhang can't hurt the portfolio.",
+        "changedMind": false
+      },
+      "lynch": {
+        "keyRisks": [
+          "Growth slowdown",
+          "Depreciation"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Revenue growth below 15%.",
+        "fairValue": {
+          "bear": 550,
+          "base": 780,
+          "bull": 920
+        },
+        "rebuttal": "Warren and the Quant are both right that the PEG flatters — depreciation is coming and 26% won't last forever. I lower conviction, keep the buy: even at 15% growth, the price is fair for this franchise.",
+        "vote": "BUY",
+        "conviction": 3,
+        "headline": "Still a buy, smaller: a great franchise at a fair price even if growth slows to 15%.",
+        "thesis": "Sensible position, not a big one. The test is revenue growth above 15% while capex flattens.",
+        "changedMind": false
+      },
+      "wood": {
+        "keyRisks": [
+          "Wearables adoption",
+          "Regulation"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "AI ad gains stalling.",
+        "fairValue": {
+          "bear": 580,
+          "base": 850,
+          "bull": 1100
+        },
+        "rebuttal": "Charlie, Reality Labs was early, not wrong — the glasses are shipping. Howard, the return on this capex shows up first in ad performance, and it is showing. Unchanged.",
+        "vote": "BUY",
+        "conviction": 4,
+        "headline": "Still a buy: the capex is building the platform and is already visible in ad growth.",
+        "thesis": "Accumulate on weakness; five-year view.",
+        "changedMind": false
+      },
+      "burry": {
+        "keyRisks": [
+          "Timing"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Self-funded capex.",
+        "fairValue": {
+          "bear": 380,
+          "base": 480,
+          "bull": 620
+        },
+        "rebuttal": "Peter says I count costs, not revenue. Fine: revenue +26%, operating cash flow still below capex. When revenue growth can't fund the build-out, the business is not self-financing. Unchanged.",
+        "vote": "SELL",
+        "conviction": 5,
+        "headline": "Unchanged: cash says no, whatever EPS says.",
+        "thesis": "Holders should trim; buyers should wait for free cash flow to turn without new equity.",
+        "changedMind": false
+      },
+      "dalio": {
+        "keyRisks": [
+          "Correlation",
+          "Cost of capital"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Diversified portfolio first.",
+        "fairValue": {
+          "bear": 500,
+          "base": 630,
+          "bull": 750
+        },
+        "rebuttal": "Nobody attacked my card. Glad Ken changed his hedge. My point stands at the portfolio level.",
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "Hold; if bought, as a small satellite within a capped AI/tech budget.",
+        "thesis": "Correlation with existing holdings is the main portfolio risk.",
+        "changedMind": false
+      },
+      "marks": {
+        "keyRisks": [
+          "Depreciation wave",
+          "Cycle"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Price near $520 or proof of returns.",
+        "fairValue": {
+          "bear": 500,
+          "base": 650,
+          "bull": 800
+        },
+        "rebuttal": "Cathie, electrification also had a capex boom and bust — the technology won, many early investors didn't. Being right about the technology and right about the price are two different things.",
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "Hold; get more interested near $520 or with proof of returns on the capex.",
+        "thesis": "Easy financing is a late-cycle sign. Patience costs little here.",
+        "changedMind": false
+      },
+      "quant": {
+        "keyRisks": [
+          "Issuance effect"
+        ],
+        "missingFacts": [],
+        "positions": [],
+        "changeMyMind": "Momentum turning with positive revisions.",
+        "fairValue": {
+          "bear": null,
+          "base": null,
+          "bull": null
+        },
+        "rebuttal": "Nobody attacked my card. Issuance remains a negative signal; re-score when momentum turns.",
+        "vote": "HOLD",
+        "conviction": 3,
+        "headline": "Composite neutral; issuance and momentum argue for waiting.",
+        "thesis": "Rules: no position until momentum turns positive.",
+        "changedMind": false
+      }
+    }
+  },
+  "minutes": [
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "facts",
+      "speaker": "secretary",
+      "text": "The dossier is on the table. Each seat now writes a blind card — no peeking at the others."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "buffett",
+      "text": "HOLD · c3 — A wonderful toll bridge on human attention — but when a business sells stock to pay for its capex, owner earnings are lower than reported earnings."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "munger",
+      "text": "SELL · c3 — One man controls the votes and now raises sixty billion through shares that carry none. Show me the incentive."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "ackman",
+      "text": "BUY · c4 — Ad revenue +26% at ~19× forward earnings — the market is confusing a temporary free-cash-flow trough with a broken business."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "griffin",
+      "text": "BUY · c3 — Revisions point up after the Q4 guide; supply overhang caps upside — buy small, hedge the factor."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "lynch",
+      "text": "BUY · c4 — Everyone you know uses Instagram or WhatsApp — and you can buy 26% growth at 19 times earnings."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "wood",
+      "text": "BUY · c4 — AI agents, open models and smart glasses — Meta is building a platform, and the capex is the price of admission."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "burry",
+      "text": "SELL · c5 — Negative free cash flow, a 6.5% preferred and $60bn of non-voting stock to come. Read the prospectus, not the press release."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "dalio",
+      "text": "HOLD · c3 — It's the same AI-capex bet the portfolio already owns, now exposed to a political regime shift on data centres."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "marks",
+      "text": "HOLD · c3 — When the best business in its industry needs outside capital to fund its build-out, we are late in the capex cycle."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "quant",
+      "text": "HOLD · c3 — Value improving, momentum negative, quality falling, revisions positive: composite neutral."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "blind",
+      "speaker": "secretary",
+      "text": "Vote after blind cards: 4 BUY, 4 HOLD, 2 SELL. Base-case fair values range 480–850, median 650."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "buffett",
+      "text": "@Peter Lynch: Peter, that nineteen times is calculated on earnings before the bill for $140bn a year of data centres shows up as depreciation. The PEG flatters what the owner actually gets."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "munger",
+      "text": "@Cathie Wood: Cathie, the last time this company bet the house on the next platform it was called the metaverse and it burned tens of billions. Glasses are the sequel."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "ackman",
+      "text": "@Michael Burry: Michael, funding a capex peak with equity at $625 is prudence, not distress. A company growing ad revenue 26% is not a company in trouble."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "griffin",
+      "text": "@Charlie Munger: Charlie, the governance structure has been the same for a decade and is priced in. Your objection has no catalyst; revisions and supply do."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "lynch",
+      "text": "@Michael Burry: Michael, you've counted the cost of every data centre but not one dollar of the revenue it produces. Ads are working better — that's why revenue is up 26%."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "wood",
+      "text": "@Howard Marks: Howard, 'late-cycle' assumes AI spending is cyclical. It's a platform shift like electrification; the early spend always looks excessive."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "burry",
+      "text": "@Bill Ackman: Bill, a company that used to throw off enormous free cash flow is now paying 6.5% on preferred stock. That's not a bridge, that's a toll. Read the terms."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "dalio",
+      "text": "@Ken Griffin: Ken, your 'hedge broad tech' is long and short the same factor: AI capex. If the regime turns, the hedge won't protect you where it matters."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "marks",
+      "text": "@Cathie Wood: Cathie, platform shift or not, there's no asset so good it can't be a bad buy at the wrong price — and nobody knows yet what this capex will earn."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "roast",
+      "speaker": "quant",
+      "text": "@Peter Lynch: Peter, the PEG uses one year of growth. The base rate of 26% growth persisting for five years at this revenue scale is low."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "buffett",
+      "text": "Nobody came after me. I'll just repeat: what matters is what's left for the owner after the spending, and we'll know that in a couple of years, not this week."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "munger",
+      "text": "Ken says governance is priced in. Governance is always priced in — until it isn't. I have nothing to add."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "ackman",
+      "text": "Michael has a point on the cost of the preferred — 6.5% is not cheap money and I concede it. But it is a small part of the capital stack against an advertising engine of this size. Thesis intact."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "griffin",
+      "text": "Ray is right: hedging with broad tech leaves the AI-capex factor in both legs. I switch to an equal-weight index hedge and cut size to 1.5%. The view on revisions stands."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "lynch",
+      "text": "Warren and the Quant are both right that the PEG flatters — depreciation is coming and 26% won't last forever. I lower conviction, keep the buy: even at 15% growth, the price is fair for this franchise."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "wood",
+      "text": "Charlie, Reality Labs was early, not wrong — the glasses are shipping. Howard, the return on this capex shows up first in ad performance, and it is showing. Unchanged."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "burry",
+      "text": "Peter says I count costs, not revenue. Fine: revenue +26%, operating cash flow still below capex. When revenue growth can't fund the build-out, the business is not self-financing. Unchanged."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "dalio",
+      "text": "Nobody attacked my card. Glad Ken changed his hedge. My point stands at the portfolio level."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "marks",
+      "text": "Cathie, electrification also had a capex boom and bust — the technology won, many early investors didn't. Being right about the technology and right about the price are two different things."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "rebuttal",
+      "speaker": "quant",
+      "text": "Nobody attacked my card. Issuance remains a negative signal; re-score when momentum turns."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "buffett",
+      "text": "HOLD · c3 — A wonderful franchise; I'd wait to see owner earnings after the build-out."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "munger",
+      "text": "SELL · c3 — Unchanged: superb franchise, unchecked capital allocation, owners asked to pay without a vote."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "ackman",
+      "text": "BUY · c4 — Still a buy: a dominant franchise in a temporary cash-flow trough at a fair price."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "griffin",
+      "text": "BUY · c3 — Buy small (1.5%), equal-weight hedge, review at −12% or when the ATM starts."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "lynch",
+      "text": "BUY · c3 — Still a buy, smaller: a great franchise at a fair price even if growth slows to 15%."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "wood",
+      "text": "BUY · c4 — Still a buy: the capex is building the platform and is already visible in ad growth."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "burry",
+      "text": "SELL · c5 — Unchanged: cash says no, whatever EPS says."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "dalio",
+      "text": "HOLD · c3 — Hold; if bought, as a small satellite within a capped AI/tech budget."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "marks",
+      "text": "HOLD · c3 — Hold; get more interested near $520 or with proof of returns on the capex."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "quant",
+      "text": "HOLD · c3 — Composite neutral; issuance and momentum argue for waiting."
+    },
+    {
+      "at": "2026-11-13T08:30:00.000Z",
+      "round": "final",
+      "speaker": "secretary",
+      "text": "Verdict: HOLD — Split committee (4 BUY – 4 HOLD – 2 SELL); tie between BUY and HOLD, so the more cautious option. Everyone agrees the advertising franchise is excellent and growing fast. The split is about cash: reported earnings make Meta look fairly priced at ~19×, but capex has outrun operating cash flow and the company is funding itself with new equity, including a 6.5% preferred and a planned non-voting share programme. Buyers see a temporary trough; sceptics see a late-cycle signal. Buyers reduced sizing during the debate. Strongest unanswered point: when does the build-out become self-funding? The decision now rests with the Head of IC."
+    }
+  ],
+  "chat": [],
+  "verdict": {
+    "recommendation": "HOLD",
+    "consensus": "Split committee (4 BUY – 4 HOLD – 2 SELL); tie between BUY and HOLD, so the more cautious option",
+    "summary": "Everyone agrees the advertising franchise is excellent and growing fast. The split is about cash: reported earnings make Meta look fairly priced at ~19×, but capex has outrun operating cash flow and the company is funding itself with new equity, including a 6.5% preferred and a planned non-voting share programme. Buyers see a temporary trough; sceptics see a late-cycle signal. Buyers reduced sizing during the debate. Strongest unanswered point: when does the build-out become self-funding?",
+    "agreements": [
+      "The ad business is outstanding (+26% revenue)",
+      "Depreciation from the build-out will weigh on reported margins",
+      "Any position should be small and in tranches"
+    ],
+    "disagreements": [
+      "Temporary cash-flow trough vs. structural change in economics",
+      "Whether governance and non-voting shares matter for the price",
+      "Platform shift vs. capex cycle"
+    ],
+    "keyRisks": [
+      "2027 capex guidance",
+      "Dilution from the up-to-$60bn Class C programme",
+      "Regulatory and legal costs",
+      "Correlation with existing MSFT/AAPL/world-index exposure"
+    ],
+    "openQuestions": [
+      "What is the 2027 capex guide?",
+      "When does free cash flow turn positive without new equity?",
+      "Terms and timing of the Class C programme"
+    ],
+    "positionSizing": "If the Head of IC wants exposure: starter 1–1.5%, second tranche after the 2027 capex guide; Marks' level for a larger position ≈ $520.",
+    "herdAlarm": false,
+    "tally": {
+      "votes": {
+        "BUY": 4,
+        "HOLD": 4,
+        "SELL": 2
+      },
+      "count": 10,
+      "median": 650,
+      "min": 480,
+      "max": 850,
+      "spread": 0.5692307692307692,
+      "unanimous": false
+    },
+    "blindTally": {
+      "votes": {
+        "BUY": 4,
+        "HOLD": 4,
+        "SELL": 2
+      },
+      "count": 10,
+      "median": 650,
+      "min": 480,
+      "max": 850,
+      "spread": 0.5692307692307692,
+      "unanimous": false
+    }
+  },
+  "decision": null,
+  "errors": []
+}

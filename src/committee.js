@@ -344,6 +344,15 @@ export async function askCommittee(s, text) {
   minute(s, s.currentRound, "hollmann", text);
   persist(s);
 
+  // Claude Code mode without an API key: the question waits until Claude Code answers it in the chat.
+  if (!isLive() && s.mode === "claude-code") {
+    const note = "Question recorded. To get the seats' answers for free, tell Claude Code: \"Answer the open questions in the committee.\"";
+    s.chat.push({ at: now(), speaker: "secretary", text: note, pending: true });
+    minute(s, s.currentRound, "secretary", note);
+    persist(s);
+    return s;
+  }
+
   // "@Buffett", "@Ken Griffin", "@all"
   const lower = text.toLowerCase();
   let targets = personas.filter((p) => p.kind === "member" && s.members.includes(p.id) &&
@@ -355,7 +364,7 @@ export async function askCommittee(s, text) {
   await pool(targets, 4, async (p) => {
     let reply;
     try {
-      reply = s.mode === "live"
+      reply = isLive()
         ? (await ask({
             system: p.kind === "secretary" ? `${RULES}\n\n# Your seat\n${p.prompt}` : seatSystem(p, byId.hollmann),
             maxTokens: 4000,
